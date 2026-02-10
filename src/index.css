@@ -3,9 +3,29 @@
   --color-background: #ffffff;
   --color-heading: #2b323b;
   --color-body: #44474b;
-  --color-text-muted: #8e949f;
+  --color-caption: #8e949f;
   --color-border: #d5d8dd;
   --color-gray-light: #f2f5f7;
+
+  /* Font Sizes */
+  --font-title: 2.5rem;
+  --font-heading: 1.5rem;
+  --font-body: 1rem;
+  --font-caption: 0.875rem;
+
+  --border-radius: 8px;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 4rem;
+
+  /* Line Heights */
+  --lh-tight: 1.2;
+  --lh-relaxed: 1.6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,12 +34,100 @@
     --color-background: #121417;
     --color-heading: #f2f5f7;
     --color-body: #d5d8dd;
-    --color-text-muted: #8e949f;
+    --color-caption: #8e949f;
     --color-border: #2c3138;
     --color-gray-light: #1e2126;
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
-  
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: var(--spacing-lg);
+}
+
+p {
+  font-size: var(--font-body);
+  line-height: var(--lh-relaxed);
+  color: var(--color-body);
+}
+
+h1 {
+  font-size: var(--font-title);
+}
+
+h2 {
+  font-size: var(--font-heading);
+}
+
+.caption {
+  font-size: var(--font-caption);
+  color: var(--color-caption);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+.button {
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: var(--border-radius);
+
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.8;
+}
+
+.has-hover {
+  transition-property: color fill;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.has-hover:hover {
+  cursor: pointer;
+  color: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.icon {
+  fill: var(--color-body);
+  width: 24px;
+  height: 24px;
 }

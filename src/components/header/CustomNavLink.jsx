@@ -6,7 +6,9 @@ export default function CustomNavLink({ to, label }) {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+        isActive
+          ? `${styles.navLink} ${styles.active} has-hover`
+          : `${styles.navLink} has-hover`
       }
     >
       {label}

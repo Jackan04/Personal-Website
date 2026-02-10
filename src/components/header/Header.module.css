@@ -1,7 +1,11 @@
-.navLink {
-
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.navLink.active{
-    
+.navLink {
+}
+
+.navLink.active {
+  color: var(--color-accent);
 }

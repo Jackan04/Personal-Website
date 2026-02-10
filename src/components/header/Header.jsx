@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header>
       <div className={`container ${styles.header}`}>
-        <Link to="/" className={styles.logo}>
+        <Link to="/" className={`${styles.logo} has-hover`}>
           Jacob Asker
         </Link>
         <nav>
