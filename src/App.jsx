@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <main className="main-content">
-        <Outlet />
+      <main>
+        <Outlet className="main-content"/>
       </main>
       <Footer />
     </div>
