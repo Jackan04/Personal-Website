@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@font-face {
+  font-family: "SN Pro";
+  src: url("./assets/fonts/SNPro-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --color-accent: #6a98f8;
@@ -143,5 +149,3 @@ button:hover,
   width: 24px;
   height: 24px;
 }
-
-
