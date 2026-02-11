@@ -1,6 +1,6 @@
 import styles from "./ProjectCards.module.css";
 import allProjects from "../../data/projects";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function ProjectCards() {
   const [filter, setFilter] = useState(null);
