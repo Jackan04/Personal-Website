@@ -120,6 +120,7 @@ button,
   color: #fff;
   padding: 8px 18px;
   border-radius: var(--border-radius);
+  font-weight: var(--weight-semi);
 }
 
 button:hover,
@@ -140,6 +141,12 @@ button:hover,
 }
 
 /* Home Page */
+.hero-header {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-md);
+}
 .text-section {
   display: flex;
   flex-direction: column;

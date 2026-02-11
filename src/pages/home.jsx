@@ -5,10 +5,10 @@ import ExperienceCards from "../components/experience-cards/ExperienceCard";
 export default function Home() {
   return (
     <div className="main-content">
-      <div className="text-section">
+      <div className="hero-header">
         <img
-          width={128}
-          height={128}
+          width={100}
+          height={100}
           src={profileImage}
           loading="lazy"
           alt="Profile Image"
