@@ -4,7 +4,8 @@
   align-items: center;
 }
 
-.rightContent {
+.rightContent,
+.leftContent {
   display: flex;
   align-items: center;
   gap: var(--spacing-lg);
@@ -14,4 +15,8 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
+}
+
+.iconContainer > a {
+  display: flex;
 }

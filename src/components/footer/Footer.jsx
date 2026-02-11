@@ -14,9 +14,21 @@ export default function Footer() {
         </div>
         <div className={styles.rightContent}>
           <div className={styles.iconContainer}>
-            <GitHubIcon className="icon has-hover" />
-            <LinkedInIcon className="icon has-hover" />
-            <UnsplashIcon className="icon has-hover" />
+            <a
+              href="https://github.com/Jackan04?tab=repositories"
+              target="_blank"
+            >
+              <GitHubIcon className="icon has-hover" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
+              target="_blank"
+            >
+              <LinkedInIcon className="icon has-hover" />
+            </a>
+            <a href="https://unsplash.com/@jacobasker04" target="_blank">
+              <UnsplashIcon className="icon has-hover" />
+            </a>
           </div>
           <a className="button" href="mailto:jacob.asker@icloud.com">
             Contact
