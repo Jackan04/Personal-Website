@@ -1,0 +1,12 @@
+.cardsContainer {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.card {
+  width: fit-content;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
