@@ -35,17 +35,18 @@ export default function ImageGallery() {
     <div className={styles.gallery}>
       {images.map((image, index) => {
         return (
-          <a
-            key={index}
-            href={image.links.html}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={image.urls.regular}
-              loading="lazy"
-              alt={image.alt_description}
-            ></img>
+          <div key={index}>
+            <a
+              href={image.links.html}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={image.urls.regular}
+                loading="lazy"
+                alt={image.alt_description}
+              ></img>
+            </a>
             <p className={styles.attribution}>
               Photo by{" "}
               <a href={image.user.links.html} target="_blank">
@@ -56,7 +57,7 @@ export default function ImageGallery() {
                 Unsplash
               </a>
             </p>
-          </a>
+          </div>
         );
       })}
     </div>
