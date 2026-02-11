@@ -1,18 +1,38 @@
-import { useState } from "react";
-import samples from "../../data/unsplash_images_temp.json";
+import { useEffect, useState } from "react";
 import styles from "./ImageGallery.module.css";
+import UnsplashService from "../../services/unsplashService.js";
 
 export default function ImageGallery() {
   const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const fetchImages = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const data = await UnsplashService.getAllImages();
+  //       setImages(data);
+  //     } catch (err) {
+  //       console.error("Error fetching images:", err);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchImages();
+  // }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className={styles.loadingContainer}>
+        <p>Loading...</p>
+      </div>
+    );
   }
 
   return (
     <div className={styles.gallery}>
-      {samples.map((image) => {
+      {images.map((image) => {
         return (
           <a href={image.links.html} target="_blank">
             <img
