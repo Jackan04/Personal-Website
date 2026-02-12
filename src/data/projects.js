@@ -16,7 +16,7 @@ const projects = [
   {
     category: "code",
     url: "https://github.com/Jackan04/Ticky",
-    title: "Ticky - Task Manager",
+    title: "Project Manager",
     description:
       "A minimal and delightful task manager built with React and Firebase. Ticky helps you create lists, add tasks, set due dates, and take notes, all without the clutter.",
   },
