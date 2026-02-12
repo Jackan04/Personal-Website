@@ -13,10 +13,6 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.gallery img:hover {
-  transform: scale(1.02);
-}
-
 .attribution {
   font-size: var(--font-caption);
   color: var(--color-caption);
@@ -46,5 +42,11 @@
 
   100% {
     transform: rotateZ(360deg);
+  }
+}
+
+@media (hover: hover) {
+  .gallery img:hover {
+    transform: scale(1.02);
   }
 }

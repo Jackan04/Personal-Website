@@ -132,18 +132,6 @@ button,
   font-weight: var(--weight-semi);
 }
 
-button:hover,
-.button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.has-hover:hover {
-  cursor: pointer;
-  color: var(--color-accent);
-  fill: var(--color-accent);
-}
-
 .icon {
   fill: var(--color-body);
   width: 24px;
@@ -165,19 +153,22 @@ button:hover,
   }
 }
 
+@media (hover: hover) {
+  button:hover,
+  .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .has-hover:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+    fill: var(--color-accent);
+  }
+}
+
 @media (hover: none) {
   * {
     -webkit-tap-highlight-color: transparent;
-  }
-  .has-hover:hover,
-  img:hover {
-    color: inherit !important;
-    transform: none !important;
-  }
-
-  .button:hover,
-  button:hover {
-    opacity: 1;
-    color: #fff;
   }
 }
