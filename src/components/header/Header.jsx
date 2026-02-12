@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-import CustomNavLink from "./CustomNavLink.jsx";
+// import CustomNavLink from "./CustomNavLink.jsx";
 
 export default function Header() {
   return (
@@ -24,5 +24,20 @@ export default function Header() {
         </nav>
       </div>
     </header>
+  );
+}
+
+function CustomNavLink({ to, label }) {
+  return (
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        isActive
+          ? `${styles.navLink} ${styles.active} has-hover`
+          : `${styles.navLink} has-hover`
+      }
+    >
+      {label}
+    </NavLink>
   );
 }
