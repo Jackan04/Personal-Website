@@ -169,7 +169,15 @@ button:hover,
   * {
     -webkit-tap-highlight-color: transparent;
   }
-  *:hover {
+  has-hover:hover,
+  img:hover {
+    color: inherit !important;
     transform: none !important;
+  }
+
+  .button:hover,
+  button:hover {
+    opacity: 1;
+    color: #fff;
   }
 }

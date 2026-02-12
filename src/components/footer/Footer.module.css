@@ -23,7 +23,15 @@
 
 @media (max-width: 480px) {
   .footer {
-    flex-direction: column-reverse;
-    gap: var(--spacing-md);
+    align-items: flex-end;
   }
+
+  .rightContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* .footer {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  } */
 }
