@@ -1,9 +1,9 @@
 import profileImage from "../../assets/images/profile.jpeg";
 import { Link } from "react-router-dom";
 import ExperienceCards from "../experience-cards/ExperienceCard.jsx";
-import styles from "./HomeContent.module.css";
+import styles from "./Home.module.css";
 
-export default function HomeContent() {
+export default function Home() {
   return (
     <div className="content">
       <div className={styles.section}>

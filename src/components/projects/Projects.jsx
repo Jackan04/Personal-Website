@@ -1,8 +1,8 @@
-import styles from "./ProjectCards.module.css";
+import styles from "./Projects.module.css";
 import allProjects from "../../data/projects";
 import { useState } from "react";
 
-export default function ProjectCards() {
+export default function Projects() {
   const [filter, setFilter] = useState(null);
 
   const visibleProjects =

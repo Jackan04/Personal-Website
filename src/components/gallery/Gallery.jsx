@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import styles from "./ImageGallery.module.css";
+import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
 import SpinnerIcon from "../../assets/icons/spinner.svg?react";
 
-export default function ImageGallery() {
+export default function Gallery() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
 

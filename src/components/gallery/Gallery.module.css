@@ -9,8 +9,7 @@
   height: 300px;
   object-fit: cover;
   border-radius: var(--border-radius);
-
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.15s ease-out;
 }
 
 .attribution {
