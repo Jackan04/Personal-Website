@@ -23,15 +23,13 @@
 
 @media (max-width: 480px) {
   .footer {
-    align-items: flex-end;
+    flex-direction: column-reverse;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    /* align-items: flex-end; */
   }
 
   .rightContent {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
   }
-  /* .footer {
-    align-items: flex-start;
-    flex-direction: column-reverse;
-  } */
 }
