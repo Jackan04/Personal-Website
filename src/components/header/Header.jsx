@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-// import CustomNavLink from "./CustomNavLink.jsx";
 
 export default function Header() {
   return (
