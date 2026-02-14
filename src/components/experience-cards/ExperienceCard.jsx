@@ -17,13 +17,14 @@ export default function ExperienceCards() {
         label="JavaScript"
         url="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       />
-      <Card
-        label="Swift & SwiftUI"
-        url="https://developer.apple.com/documentation/swiftui"
-      />
       <Card label="NodeJS" url="https://nodejs.org/docs/latest/api/" />
       <Card label="React" url="https://react.dev/" />
       <Card label="React Native" url="https://reactnative.dev/" />
+      <Card label="Swift" url="https://developer.apple.com/swift/" />
+      <Card
+        label="SwiftUI"
+        url="https://developer.apple.com/documentation/swiftui"
+      />
       <Card label="C#" url="https://learn.microsoft.com/en-us/dotnet/csharp/" />
       <Card
         label="SQL"

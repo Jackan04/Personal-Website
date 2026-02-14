@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import PhotographyPage from "./pages/PhotographyPage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 const router = createHashRouter([
   {
@@ -23,6 +24,10 @@ const router = createHashRouter([
       {
         path: "/photography",
         element: <PhotographyPage />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
   },

@@ -45,7 +45,7 @@ export default function Gallery() {
   }
 
   return (
-    <div>
+    <div className="content">
       <div className={styles.gallery}>
         {images.map((image) => (
           <div className={styles.imageCard}>

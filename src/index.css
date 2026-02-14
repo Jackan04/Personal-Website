@@ -27,7 +27,6 @@
   --border-radius: 8px;
 
   /* Spacing Scale */
-  --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
@@ -127,9 +126,11 @@ button,
   background-color: var(--color-accent);
   color: #fff;
   padding: 8px 18px;
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
   font-size: var(--font-body);
   font-weight: var(--weight-semi);
+  width: fit-content;
 }
 
 .icon {
@@ -144,7 +145,6 @@ button,
     --font-body: 1rem;
     --font-caption: 0.875rem;
 
-    --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 0.75rem;
     --spacing-lg: 1.25rem;
