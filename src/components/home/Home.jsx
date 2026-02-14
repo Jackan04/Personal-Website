@@ -25,11 +25,7 @@ export default function Home() {
           spend most of my time exploring the intersection of code and user
           experience. When I’m not at the keyboard, you’ll usually find me
           hiking with friends, lifting at the gym, or behind a camera. Take a
-          look at some of my{" "}
-          <Link className="inline-link" to="/projects">
-            projects
-          </Link>
-          .
+          look at some of my.
         </p>
       </div>
       <div className={styles.section}>

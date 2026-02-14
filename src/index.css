@@ -112,10 +112,6 @@ a {
   color: var(--color-body);
 }
 
-.inline-link {
-  color: var(--color-accent);
-}
-
 ul {
   list-style: none;
 }
