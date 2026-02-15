@@ -24,8 +24,7 @@ export default function Home() {
           I’m currently finishing my bacherlors degree in informatics, where I
           spend most of my time exploring the intersection of code and user
           experience. When I’m not at the keyboard, you’ll usually find me
-          hiking with friends, lifting at the gym, or behind a camera. Take a
-          look at some of my.
+          hiking with friends, lifting at the gym, or behind a camera.
         </p>
       </div>
       <div className={styles.section}>
