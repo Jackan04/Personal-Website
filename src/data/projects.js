@@ -4,42 +4,42 @@ const projects = [
     url: "https://github.com/Jackan04/inventory-application",
     title: "Inventory App",
     description:
-      "Inventory management app built with Express.js and PostgreSQL. Manage categories and grocery items with full CRUD functionality.",
+      "Built a grocery inventory manager with MVC pattern to practice server-side rendering and database relationships. Used Express.js for routing, PostgreSQL for storing categories and items, and EJS for the views to create dynamic, server rendered pages.  ",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/Blog-app",
     title: "Blog App",
     description:
-      "A full-stack blog application built with Node.js, Express, and MongoDB. It allows users to create, read, edit, and delete blog posts. The application features a clean, unobtrusive and responsive user interface.",
+      "Created a full-stack blogging app where you can write, edit, and delete posts. Built the backend with Express.js, used MongoDB to store the posts, and EJS for the frontend. I wanted to learn how NoSQL databases work and how to structure a simple content management system from scratch.",
   },
   {
     category: "code",
-    title: "ShelfLife",
     url: "https://github.com/Jackan04/ShelfLife",
+    title: "ShelfLife",
     description:
-      "iOS app built with Swift and SwiftUI that helps users track groceries and expiration dates. Search, add, update, and delete items, view upcoming and expired products, and organize groceries by category. Data is persisted using SwiftData.",
+      "Developed an iOS app to help people track groceries and avoid food waste. Built it with Swift and SwiftUI, using SwiftData to persist everything locally on the device. I got tired of throwing out expired food and wanted to learn native iOS development, this project let me tackle both problems at once.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/Ticky",
-    title: "Project Manager",
+    title: "Task Manager",
     description:
-      "A minimal and delightful task manager built with React and Firebase. Ticky helps you create lists, add tasks, set due dates, and take notes, all without the clutter.",
+      "Made a personal task manager focused on simplicity and speed. Used React for the interface and Firebase for storing data. I was frustrated with overly complex todo apps and wanted something that just works without the clutter. Just tasks, lists, due dates, and notes.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/MediaTracker?tab=readme-ov-file",
     title: "Media Tracker",
     description:
-      "A mobile app built with React Native, Expo and SQLite for tracking movies and shows. Search, save, pin, mark as watched, and manage your personal watchlist — with detailed info for each title powered by TMDB.",
+      "Built a mobile app to track movies and shows I want to watch. Used React Native with Expo for cross-platform development, SQLite for local storage, and the TMDB API for all the media data. I kept forgetting what movies and shows people recommended, and I wanted to explore mobile development while solving a real problem I had.",
   },
   {
     category: "design",
     url: "https://www.linkedin.com/pulse/designcase-förbättring-av-självbetjäningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
     title: "Redesign of Self-Checkout",
     description:
-      "Suggested improvements for a self-service checkout screen based on observed usability issues, aiming to make it more intuitive and reduce errors for first-time users.",
+      "Analyzed usability issues in a self-service checkout interface and proposed improvements. Observed users struggling with unclear buttons and confusing flows, then redesigned the screen to be more intuitive. I wanted to apply UX principles to a real-world interface.",
   },
 ];
 
