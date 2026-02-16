@@ -12,6 +12,7 @@ class UnsplashService {
         `Failed to fetch images: ${response.status} ${response.statusText}`,
       );
     }
+    
     return await response.json();
   }
 }
