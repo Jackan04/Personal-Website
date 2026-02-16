@@ -8,8 +8,6 @@ export default function Gallery() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log(images);
-
   useEffect(() => {
     const fetchImages = async () => {
       setLoading(true);
@@ -48,9 +46,8 @@ export default function Gallery() {
     <div className="content">
       <div className={styles.gallery}>
         {images.map((image) => (
-          <div className={styles.imageCard}>
+          <div key={image.id} className={styles.imageCard}>
             <a
-              key={image.id}
               href={image.links.html}
               target="_blank"
               rel="noopener noreferrer"
@@ -61,7 +58,7 @@ export default function Gallery() {
                 alt={image.alt_description}
               />
             </a>
-            <p className={styles.attribution} key={image.id}>
+            <p className={styles.attribution}>
               Photo by{" "}
               <a
                 href={image.user.links.html}

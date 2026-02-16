@@ -1,9 +1,6 @@
 class UnsplashService {
   constructor() {
     this.url = import.meta.env.VITE_UNSPLASH_URL;
-    if (!this.url) {
-      console.warn("VITE_UNSPLASH_URL is not defined");
-    }
   }
 
   async getAllImages() {
