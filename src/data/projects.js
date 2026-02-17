@@ -4,7 +4,7 @@ const projects = [
     url: "https://github.com/Jackan04/inventory-application",
     title: "Inventory App",
     description:
-      "Built a grocery inventory manager with MVC pattern to practice server-side rendering and database relationships. Used Express.js for routing, PostgreSQL for storing categories and items, and EJS for the views to create dynamic, server rendered pages.  ",
+      "Built a grocery inventory manager with MVC pattern to practice server-side rendering and database relationships. Used Express.js, PostgreSQL for storing categories and items, and EJS for the views to create dynamic, server rendered pages.",
   },
   {
     category: "code",
@@ -18,7 +18,7 @@ const projects = [
     url: "https://github.com/Jackan04/ShelfLife",
     title: "ShelfLife",
     description:
-      "Developed an iOS app to help people track groceries and avoid food waste. Built it with Swift and SwiftUI, using SwiftData to persist everything locally on the device. I got tired of throwing out expired food and wanted to learn native iOS development, this project let me tackle both problems at once.",
+      "Developed an iOS app to help people track groceries and avoid food waste. Built it with Swift and SwiftUI, using SwiftData to persist everything locally on the device. I got tired of throwing out expired food and wanted to learn native iOS development, so this project let me tackle both problems at once.",
   },
   {
     category: "code",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     category: "design",
-    url: "https://www.linkedin.com/pulse/designcase-förbättring-av-självbetjäningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
+    url: "https://www.linkedin.com/pulse/designcase-fÃ¶rbÃ¤ttring-av-sjÃ¤lvbetjÃ¤ningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
     title: "Redesign of Self-Checkout",
     description:
       "Analyzed usability issues in a self-service checkout interface and proposed improvements. Observed users struggling with unclear buttons and confusing flows, then redesigned the screen to be more intuitive. I wanted to apply UX principles to a real-world interface.",
