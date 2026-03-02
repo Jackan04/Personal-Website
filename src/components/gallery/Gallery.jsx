@@ -46,16 +46,15 @@ export default function Gallery() {
 
   return (
     <>
-      <Accordion summary="About the photos">
+      <Accordion summary="About the Photos">
         <p>
-          Photography is a big passion outside of coding. The images below are
-          from my Unsplash collection, click any photo to view it on Unsplash,
-          or visit{" "}
+          Photography is one of my biggest passions outside of coding. Browse
+          the images below or visit{" "}
           <Link
             className="inline-link"
             href="https://unsplash.com/@jacobasker04"
           >
-            my full collection
+            my full Unsplash collection
           </Link>{" "}
           to see more.
         </p>
