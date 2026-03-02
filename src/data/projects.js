@@ -16,23 +16,9 @@ const projects = [
       "A members-only message dashboard featuring role-based access. Visitors can read messages, while signed-in members and admins have permissions to interact with and manage content and users.",
   },
   {
-    category: categories[0],
-    url: "https://github.com/Jackan04/inventory-application",
-    title: "Inventory App",
-    description:
-      "A grocery inventory manager designed to organize grocery items and categories through a simple interface, streamlining how users track their household stock.",
-  },
-  {
-    category: categories[0],
-    url: "https://github.com/Jackan04/Blog-app",
-    title: "Blog App",
-    description:
-      "A full-stack blogging manager prototype that allows users to create, edit, and manage their own posts.",
-  },
-  {
     category: categories[1],
     url: "https://github.com/Jackan04/ShelfLife",
-    title: "ShelfLife",
+    title: "Shelf Life",
     description:
       "A mobile application designed to help users track their groceries and reduce food waste by keeping a close eye on expiration dates.",
   },
