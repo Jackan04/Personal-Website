@@ -13,7 +13,7 @@ const experiences = [
   },
   {
     category: "Data",
-    toolset: "PostgreSQL, MongoDB, SwiftData, Firebase Firestore",
+    toolset: "PostgreSQL, Prisma ORM, MongoDB, SQLite, Firebase Firestore",
   },
   {
     category: "UX Design",
