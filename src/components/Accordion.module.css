@@ -20,13 +20,13 @@
 }
 
 .icon {
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   width: var(--font-body);
   height: var(--font-body);
 }
 
 .accordion[open] .icon {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .content {

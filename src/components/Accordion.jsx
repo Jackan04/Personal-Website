@@ -1,4 +1,4 @@
-import ChevronRightIcon from "../assets/icons/chevron-right.svg?react";
+import ChevronDownIcon from "../assets/icons/chevron-down.svg?react";
 import styles from "./Accordion.module.css";
 
 export default function Accordion({ summary, children }) {
@@ -6,7 +6,7 @@ export default function Accordion({ summary, children }) {
     <details className={styles.accordion}>
       <summary className={styles.summary}>
         {summary}
-        <ChevronRightIcon className={`icon ${styles.icon}`} />
+        <ChevronDownIcon className={`icon ${styles.icon}`} />
       </summary>
       <div className={styles.content}>{children}</div>
     </details>
