@@ -1,4 +1,4 @@
-import profileImage from "../../assets/images/profile.jpeg";
+import profileImage from "../../assets/images/profile.webp";
 import ExperienceTable from "../experience-cards/ExperienceTable.jsx";
 import styles from "./Home.module.css";
 import Link from "../Link.jsx";
