@@ -30,13 +30,13 @@ export default function Gallery() {
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
-        <p>Loading gallery...</p>
         <SpinnerIcon className={styles.spinnerIcon} />
+        <p>Loading gallery...</p>
       </div>
     );
   }
 
-  if (images.length < 1 || images == undefined) {
+  if (!loading && images.length < 1) {
     return (
       <div className={styles.loadingContainer}>
         <p>Failed to load the images from Unsplash.</p>

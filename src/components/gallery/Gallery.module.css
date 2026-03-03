@@ -34,8 +34,8 @@ img {
 
 .spinnerIcon {
   fill: var(--color-body);
-  width: var(--font-body);
-  height: var(--font-body);
+  width: var(--font-heading);
+  height: var(--font-heading);
   animation-name: spin;
   animation-duration: 1s;
   animation-iteration-count: infinite;
