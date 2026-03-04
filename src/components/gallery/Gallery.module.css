@@ -12,6 +12,8 @@ img {
 }
 
 .imageCard {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 300px;
   transition: transform 0.15s ease-out;
 }
 

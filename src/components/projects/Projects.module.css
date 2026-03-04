@@ -5,6 +5,8 @@
 }
 
 .card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 200px;
   border-left: 5px solid var(--color-accent);
   padding-left: var(--spacing-lg);
   display: flex;
