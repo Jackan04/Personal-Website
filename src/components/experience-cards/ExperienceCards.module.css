@@ -11,7 +11,7 @@
 }
 
 .categoryCard {
-  max-width: 250px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
