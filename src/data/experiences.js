@@ -7,6 +7,7 @@ const experiences = [
       "REST APIs",
       "Prisma ORM",
       "Passport.js",
+      "JWT",
       "C# .NET",
       "EJS",
     ],
