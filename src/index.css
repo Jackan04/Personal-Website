@@ -146,6 +146,12 @@ button.small,
   padding: 4px 6px;
 }
 
+button.transparent,
+.button.transparent {
+  padding: 0;
+  background-color: transparent;
+}
+
 .filterButton {
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
@@ -175,6 +181,7 @@ button.small,
 }
 
 dialog {
+  position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: min(500px, 90%);
@@ -196,14 +203,22 @@ dialog header {
   gap: var(--spacing-sm);
 }
 
-.dialog-content {
-  padding-bottom: var(--spacing-lg);
+.dialog-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
 dialog[open] {
   display: inline-flex;
   flex-direction: column;
   gap: var(--spacing-md);
+}
+
+.closeModalButton {
+  position: absolute;
+  right: var(--spacing-md);
+  top: var(--spacing-md);
 }
 
 @media (max-width: 480px) {
@@ -224,8 +239,8 @@ dialog[open] {
 @media (hover: hover) {
   button:hover,
   .button:hover {
-    cursor: pointer;
     opacity: 0.8;
+    cursor: pointer;
   }
 
   .filterButton:not(.active):hover {
@@ -242,7 +257,7 @@ dialog[open] {
   }
 
   .inline-link:hover {
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
   }
 }
 

@@ -1,12 +1,15 @@
 const experiences = [
   {
     category: "Backend",
-    description: "Building the engine room where APIs stay fast and reliable.",
+    description: "Read about my experience building server-side applications.",
+    details:
+      "My backend work centers around Node.js and Express, building RESTful APIs with a focus on clean structure and security. I've implemented authentication flows with Passport.js and JWT, and session-based authentication, managing databases through Prisma ORM and Mongoose, and rendering server-side views with EJS. I've also worked with C# and .NET, giving me exposure beyond the JavaScript ecosystem.",
     toolset: [
       "Node.js",
       "Express.js",
       "REST APIs",
       "Prisma ORM",
+      "Mongoose",
       "Passport.js",
       "JWT",
       "C# .NET",
@@ -15,17 +18,23 @@ const experiences = [
   },
   {
     category: "Frontend",
-    description: "Crafting interfaces that feel effortless at first click.",
+    description: "Read about my experience crafting web interfaces.",
+    details:
+      "React is the tool I mainly use for frontend work. I build component-driven UIs with a focus on clean structure, intuitive interactions, and responsive design. I mix between writing CSS by hand or relying on lightweight UI libraries such as oat.ink when I want to spin up something a bit faster.",
     toolset: ["React", "JavaScript", "HTML", "CSS"],
   },
   {
     category: "Mobile",
-    description: "Designing pocket-sized experiences that travel everywhere.",
+    description: "Read about my experience developing mobile apps.",
+    details:
+      "I have experience in mobile on two fronts, native iOS using Swift and SwiftUI, and cross-platform using React Native. On the native side I've worked with platform-specific frameworks like Core ML and SwiftData. React Native lets me carry my JavaScript skills into mobile, making it a natural fit for cross-platform projects.",
     toolset: ["Swift", "SwiftUI", "React Native"],
   },
   {
     category: "Data",
-    description: "Keeping the source of truth clean, searchable, and ready.",
+    description: "Read about my experience working with databases.",
+    details:
+      "I've worked with both relational and non-relational databases and try to pick the right tool for the job. I'm comfortable with schema design, querying, and integrating databases into the rest of an application.",
     toolset: ["PostgreSQL", "MongoDB", "SQLite", "Firebase Firestore"],
   },
 ];

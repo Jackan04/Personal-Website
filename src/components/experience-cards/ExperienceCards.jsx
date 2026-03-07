@@ -1,5 +1,6 @@
 import styles from "./ExperienceCards.module.css";
 import experiences from "../../data/experiences.js";
+import XMarkIcon from "../../assets/icons/xmark.svg?react";
 import { useState } from "react";
 
 export default function ExperienceCards() {
@@ -15,7 +16,7 @@ export default function ExperienceCards() {
             onClick={() => setIsOpen(item.category)}
             className={`small ${styles.openDialogButton}`}
           >
-            Open
+            Read more
           </button>
           <Dialog item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
@@ -28,22 +29,28 @@ function Dialog({ item, isOpen, setIsOpen }) {
   return (
     <dialog open={isOpen === item.category}>
       <header>
-        <h3 className={styles.title}>{item.category}</h3>
-        <p>
-          I have hands-on experience with the following tools and technologies.
-        </p>
+        <button
+          className="transparent closeModalButton"
+          onClick={() => setIsOpen(false)}
+        >
+          <XMarkIcon className="icon" />
+        </button>
+        <h2 className={styles.title}>{item.category}</h2>
       </header>
-      <div className={`dialog-content ${styles.toolList}`}>
-        {item.toolset.map((tool) => (
-          <div className={styles.label}>
-            <p>{tool}</p>
-          </div>
-        ))}
+      <div className="dialog-section">
+        <h3>Details</h3>
+        <p>{item.details}</p>
       </div>
-
-      <footer>
-        <button onClick={() => setIsOpen(false)}>Close</button>
-      </footer>
+      <div className="dialog-section">
+        <h3>Toolset</h3>
+        <div className={styles.toolList}>
+          {item.toolset.map((tool) => (
+            <div className={styles.label}>
+              <p>{tool}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </dialog>
   );
 }
