@@ -8,7 +8,7 @@ export default function NotFound() {
         The page you're looking for seems to have wandered off. Don't worry, it
         happens to the best of us!
       </p>
-      <NavLink to="/" className="button default">
+      <NavLink to="/" className="button hover-opacity">
         Take Me Home
       </NavLink>
     </>

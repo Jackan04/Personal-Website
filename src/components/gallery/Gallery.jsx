@@ -75,10 +75,10 @@ export default function Gallery() {
 
       <Link
         href="https://unsplash.com/@jacobasker04"
-        className={styles.unsplashRedirect}
+        className={`${styles.unsplashRedirect} hover-accent`}
       >
         View Full Gallery on Unsplash
-        <ArrowRightIcon className="icon" />
+        <ArrowRightIcon className="icon hover-accent" />
       </Link>
     </>
   );

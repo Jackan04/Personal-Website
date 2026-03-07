@@ -7,6 +7,7 @@
 }
 
 :root {
+  /* Colors */
   --color-accent: #6a98f8;
   --color-background: #ffffff;
   --color-heading: #2c323a;
@@ -241,42 +242,18 @@ dialog[open] {
 }
 
 @media (hover: hover) {
-  button.default:hover,
-  .button.default:hover {
+  .hover-opacity:hover {
     opacity: 0.8;
     cursor: pointer;
   }
 
-  button.transparent:hover,
-  .button.transparent:hover,
-  button.outline:hover,
-  .button.outline:hover {
+  .hover-accent:hover {
     cursor: pointer;
     color: var(--color-accent);
     border-color: var(--color-accent);
   }
 
-  button.transparent:hover .icon,
-  .button.transparent:hover .icon,
-  button.outline:hover .icon,
-  .button.outline:hover .icon {
-    fill: var(--color-accent);
-  }
-
-  .filterButton:not(.active):hover {
-    opacity: 1;
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-  }
-
-  a:not(.button):not(.inline-link):hover {
-    cursor: pointer;
-    color: var(--color-accent);
-  }
-
-  a:hover .icon {
-    cursor: pointer;
-    color: var(--color-accent);
+  .icon.hover-accent:hover {
     fill: var(--color-accent);
   }
 

@@ -14,7 +14,7 @@ export default function ExperienceCards() {
           <p className={styles.description}>{item.description}</p>
           <button
             onClick={() => setIsOpen(item.category)}
-            className={`small outline ${styles.openDialogButton}`}
+            className={`small outline hover-accent ${styles.openDialogButton}`}
           >
             Read more
           </button>
@@ -30,10 +30,10 @@ function Dialog({ item, isOpen, setIsOpen }) {
     <dialog open={isOpen === item.category}>
       <header>
         <button
-          className="transparent closeModalButton"
+          className="transparent hover-accent closeModalButton"
           onClick={() => setIsOpen(false)}
         >
-          <XMarkIcon className="icon" />
+          <XMarkIcon className="icon hover-accent" />
         </button>
         <h2 className={styles.title}>{item.category}</h2>
       </header>

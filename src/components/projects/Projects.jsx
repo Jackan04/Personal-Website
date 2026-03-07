@@ -37,7 +37,10 @@ export default function Projects() {
             <div className={styles.card}>
               <h2>{item.title}</h2>
               <p className={styles.description}>{item.description}</p>
-              <Link href={item.url} className={`button small outline`}>
+              <Link
+                href={item.url}
+                className={`button small outline hover-accent`}
+              >
                 Go to project
               </Link>
             </div>
@@ -52,7 +55,9 @@ function FilterButton({ label, value, filter, setFilter }) {
   return (
     <button
       onClick={() => setFilter(value)}
-      className={value === filter ? "filterButton active" : "filterButton"}
+      className={
+        value === filter ? "filterButton active" : "filterButton hover-accent"
+      }
     >
       {label}
     </button>

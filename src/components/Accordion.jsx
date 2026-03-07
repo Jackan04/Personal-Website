@@ -6,7 +6,7 @@ export default function Accordion({ summary, children }) {
     <details className={styles.accordion}>
       <summary className={styles.summary}>
         {summary}
-        <ChevronDownIcon className={`icon ${styles.icon}`} />
+        <ChevronDownIcon className={`icon hover-accent ${styles.icon}`} />
       </summary>
       <div className={styles.content}>{children}</div>
     </details>
