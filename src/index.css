@@ -237,6 +237,16 @@ dialog[open] {
     --spacing-xl: 1.75rem;
     --spacing-xxl: 2.5rem;
   }
+
+  dialog {
+    width: 100dvw;
+    max-width: none;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    transform: none;
+    border: none;
+  }
 }
 
 @media (hover: hover) {
