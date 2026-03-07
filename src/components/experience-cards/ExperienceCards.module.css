@@ -16,10 +16,6 @@
   border-radius: var(--border-radius);
 }
 
-.description {
-  color: var(--color-caption);
-}
-
 .toolList {
   display: flex;
   flex-direction: row;

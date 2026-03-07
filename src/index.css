@@ -94,6 +94,10 @@ p {
   color: var(--color-body);
 }
 
+.body-secondary {
+  color: var(--color-caption);
+}
+
 h2 {
   color: var(--color-heading);
   font-size: var(--font-heading);
@@ -186,7 +190,6 @@ button.transparent,
 }
 
 dialog {
-  position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: min(500px, 90%);

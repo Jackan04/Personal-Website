@@ -32,11 +32,11 @@ export default function Projects() {
         ))}
       </div>
       <ul className={styles.projectList}>
-        {visibleProjects.map((item, index) => (
-          <li key={index}>
+        {visibleProjects.map((item) => (
+          <li key={item.url}>
             <div className={styles.card}>
               <h2>{item.title}</h2>
-              <p className={styles.description}>{item.description}</p>
+              <p className="body-secondary">{item.description}</p>
               <Link
                 href={item.url}
                 className={`button small outline hover-accent`}

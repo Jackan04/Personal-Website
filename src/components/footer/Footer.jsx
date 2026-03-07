@@ -11,25 +11,28 @@ export default function Footer() {
     <footer>
       <div className={`container ${styles.footer}`}>
         <div className={styles.leftContent}>
-          <p className={styles.copyright}>Jacob Asker &copy; {year}</p>
+          <p className="body-secondary">Jacob Asker &copy; {year}</p>
         </div>
         <div className={styles.rightContent}>
           <div className={styles.iconContainer}>
             <Link
               href="https://github.com/Jackan04?tab=repositories"
               className="hover-accent"
+              aria-label="Visit Jacob Asker on GitHub"
             >
               <GitHubIcon className="icon hover-accent" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
               className="hover-accent"
+              aria-label="Visit Jacob Asker on LinkedIn"
             >
               <LinkedInIcon className="icon hover-accent" />
             </Link>
             <Link
               href="https://unsplash.com/@jacobasker04"
               className="hover-accent"
+              aria-label="Visit Jacob Asker on Unsplash"
             >
               <UnsplashIcon className="icon hover-accent" />
             </Link>

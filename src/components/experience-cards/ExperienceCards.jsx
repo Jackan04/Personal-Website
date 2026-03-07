@@ -9,9 +9,9 @@ export default function ExperienceCards() {
   return (
     <div className={styles.container}>
       {experiences.map((item) => (
-        <div className={styles.card}>
+        <div key={item.category} className={styles.card}>
           <h3 className={styles.title}>{item.category}</h3>
-          <p className={styles.description}>{item.description}</p>
+          <p className="body-secondary">{item.description}</p>
           <button
             onClick={() => setIsOpen(item.category)}
             className={`small outline hover-accent ${styles.openDialogButton}`}
@@ -30,6 +30,7 @@ function Dialog({ item, isOpen, setIsOpen }) {
     <dialog open={isOpen === item.category}>
       <header>
         <button
+          aria-label={`Close ${item.category} details`}
           className="transparent hover-accent closeModalButton"
           onClick={() => setIsOpen(false)}
         >
@@ -45,7 +46,7 @@ function Dialog({ item, isOpen, setIsOpen }) {
         <h3>Toolset</h3>
         <div className={styles.toolList}>
           {item.toolset.map((tool) => (
-            <div className={styles.label}>
+            <div key={tool} className={styles.label}>
               <p>{tool}</p>
             </div>
           ))}

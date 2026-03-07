@@ -18,7 +18,9 @@ export default function Gallery() {
         setImages(data);
       } catch (err) {
         setImages([]);
-        console.error("Error fetching images:", err);
+        if (import.meta.env.DEV) {
+          console.error("Error fetching images:", err);
+        }
       } finally {
         setLoading(false);
       }
@@ -46,7 +48,7 @@ export default function Gallery() {
 
   return (
     <>
-      <Accordion summary="About the Photos">
+      <Accordion summary="About the photos">
         <p>
           Photography is one of my biggest passions outside of coding. Browse
           the images below or visit{" "}
@@ -66,7 +68,7 @@ export default function Gallery() {
               <img
                 src={image.urls.small}
                 loading="lazy"
-                alt={image.alt_description}
+                alt={image.alt_description ?? "Unsplash photo"}
               />
             </Link>
           </div>

@@ -1,5 +1,5 @@
 import Projects from "../components/projects/Projects";
 
 export default function ProjectsPage() {
-  return <Projects></Projects>;
+  return <Projects />;
 }
