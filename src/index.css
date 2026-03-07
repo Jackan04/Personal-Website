@@ -241,17 +241,14 @@ dialog[open] {
     width: 100dvw;
     max-width: none;
     max-height: calc(100dvh - env(safe-area-inset-top));
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid var(--color-border);
     margin: 0;
     top: auto;
     bottom: 0;
     left: 0;
     transform: none;
-  }
-
-  dialog[open] {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
   }
 }
 
