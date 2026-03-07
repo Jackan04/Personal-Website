@@ -39,7 +39,7 @@ function Dialog({ item, isOpen, setIsOpen }) {
         <h2 className={styles.title}>{item.category}</h2>
       </header>
       <div className="dialog-section">
-        <h3>Details</h3>
+        {/* <h3>Details</h3> */}
         <p>{item.details}</p>
       </div>
       <div className="dialog-section">
