@@ -3,6 +3,13 @@ const categories = ["web", "mobile", "design"];
 const projects = [
   {
     category: categories[0],
+    url: "https://github.com/Jackan04/blog-api",
+    title: "Blog Platform",
+    description:
+      "A three-part blogging platform consisting of a REST API built with Node.js, Express, PostgreSQL, and JWT authentication, consumed by two separate frontends. Blog Admin handles authenticated content management, while Blog Public serves as the reader-facing client for browsing and commenting on published posts.",
+  },
+  {
+    category: categories[0],
     url: "https://github.com/Jackan04/file-uploader",
     title: "File Uploader",
     description:
