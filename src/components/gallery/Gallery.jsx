@@ -78,7 +78,7 @@ export default function Gallery() {
         href="https://unsplash.com/@jacobasker04"
         className={`${styles.unsplashRedirect} button outline hover-accent`}
       >
-        View Full Gallery on Unsplash
+        View full gallery on Unsplash
       </Link>
     </>
   );
