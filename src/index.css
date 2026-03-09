@@ -222,7 +222,7 @@ dialog[open] {
   gap: var(--spacing-md);
 }
 
-.closeModalButton {
+.closeDialogButton {
   position: absolute;
   right: var(--spacing-md);
   top: var(--spacing-md);
