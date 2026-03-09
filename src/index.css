@@ -130,6 +130,9 @@ ul {
 
 button,
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: var(--color-accent);
   color: #fff;
@@ -158,6 +161,7 @@ button.outline,
 button.transparent,
 .button.transparent {
   padding: 0;
+  margin: 0;
   background-color: transparent;
 }
 
@@ -206,8 +210,8 @@ dialog {
 
 dialog header {
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dialog-section {
@@ -220,12 +224,6 @@ dialog[open] {
   display: inline-flex;
   flex-direction: column;
   gap: var(--spacing-md);
-}
-
-.closeDialogButton {
-  position: absolute;
-  right: var(--spacing-md);
-  top: var(--spacing-md);
 }
 
 @media (max-width: 480px) {
