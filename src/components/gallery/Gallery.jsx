@@ -92,7 +92,7 @@ export default function Gallery() {
         <button
           disabled={!hasMore}
           onClick={handleLoadMore}
-          className={`outline hover-accent ${styles.loadMoreButton}`}
+          className={`hover-opacity ${styles.loadMoreButton}`}
         >
           Load More
         </button>
