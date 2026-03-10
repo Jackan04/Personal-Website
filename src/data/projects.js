@@ -45,7 +45,7 @@ const projects = [
   },
   {
     category: categories[2],
-    url: "https://www.linkedin.com/pulse/designcase-fÃ¶rbÃ¤ttring-av-sjÃ¤lvbetjÃ¤ningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7356214960147832832/?originTrackingId=eSg5eAa5mcuCMkl2pRHjqw%3D%3D",
     title: "Redesign of Self-Checkout",
     description:
       "I noticed people getting frustrated with self-checkout screens. I analyzed why the flow was so confusing and redesigned it to be much more intuitive.",
