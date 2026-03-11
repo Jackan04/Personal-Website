@@ -209,6 +209,38 @@ button.transparent,
   height: 24px;
 }
 
+.loading-container {
+  display: flex;
+  width: fit-content;
+  align-self: center;
+  gap: var(--spacing-sm);
+  align-items: center;
+  background-color: var(--color-gray-light);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+
+.spinner-icon {
+  fill: var(--color-body);
+  width: var(--font-heading);
+  height: var(--font-heading);
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  will-change: transform;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 dialog {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;

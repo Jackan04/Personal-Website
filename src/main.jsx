@@ -1,12 +1,14 @@
-import { StrictMode } from "react";
+import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./components/home/Home.jsx";
 import Projects from "./components/projects/Projects.jsx";
-import Gallery from "./components/gallery/Gallery.jsx";
 import NotFound from "./components/NotFound.jsx";
+import Loading from "./components/Loading.jsx";
+
+const Gallery = lazy(() => import("./components/gallery/Gallery.jsx"));
 
 const router = createHashRouter([
   {
@@ -23,7 +25,11 @@ const router = createHashRouter([
       },
       {
         path: "/photography",
-        element: <Gallery />,
+        element: (
+          <Suspense fallback={<Loading message="Loading gallery..." />}>
+            <Gallery />
+          </Suspense>
+        ),
       },
       {
         path: "*",
