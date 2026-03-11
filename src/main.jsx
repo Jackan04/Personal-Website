@@ -3,10 +3,10 @@ import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
-import HomePage from "./pages/HomePage.jsx";
-import ProjectsPage from "./pages/ProjectsPage.jsx";
-import PhotographyPage from "./pages/PhotographyPage.jsx";
-import NotFoundPage from "./pages/NotFoundPage.jsx";
+import Home from "./components/home/Home.jsx";
+import Projects from "./components/projects/Projects.jsx";
+import Gallery from "./components/gallery/Gallery.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const router = createHashRouter([
   {
@@ -15,19 +15,19 @@ const router = createHashRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />,
+        element: <Home />,
       },
       {
         path: "/projects",
-        element: <ProjectsPage />,
+        element: <Projects />,
       },
       {
         path: "/photography",
-        element: <PhotographyPage />,
+        element: <Gallery />,
       },
       {
         path: "*",
-        element: <NotFoundPage />,
+        element: <NotFound />,
       },
     ],
   },

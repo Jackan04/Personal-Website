@@ -1,7 +1,6 @@
 import styles from "./Projects.module.css";
 import { categories, projects } from "../../data/projects";
 import { useState } from "react";
-import { capitalize } from "../../script";
 import Link from "../Link.jsx";
 
 export default function Projects() {
@@ -24,7 +23,7 @@ export default function Projects() {
         {categories.map((category) => (
           <FilterButton
             key={category}
-            label={capitalize(category)}
+            label={category.charAt(0).toUpperCase() + category.slice(1)}
             value={category}
             filter={filter}
             setFilter={setFilter}

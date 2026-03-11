@@ -1,12 +1,11 @@
 import styles from "./Footer.module.css";
-import { getCurrentYear } from "../../script";
 import GitHubIcon from "../../assets/icons/github.svg?react";
 import LinkedInIcon from "../../assets/icons/linkedin.svg?react";
 import UnsplashIcon from "../../assets/icons/unsplash.svg?react";
 import Link from "../Link.jsx";
 
 export default function Footer() {
-  const year = getCurrentYear();
+  const year = new Date().getFullYear();
   return (
     <footer>
       <div className={`container ${styles.footer}`}>
