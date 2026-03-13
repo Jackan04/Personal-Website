@@ -1,7 +1,7 @@
 import styles from "./ExperienceCards.module.css";
 import experiences from "../../data/experiences.js";
-import XMarkIcon from "../../assets/icons/xmark.svg?react";
 import { useState } from "react";
+import Dialog from "../dialog/Dialog.jsx";
 
 export default function ExperienceCards() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,39 +18,27 @@ export default function ExperienceCards() {
                     >
                         Read More
                     </button>
-                    <Dialog item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
+                    <Dialog
+                        title={item.category}
+                        isOpen={isOpen === item.category}
+                        onClose={() => setIsOpen(false)}
+                    >
+                        <div>
+                            <p>{item.details}</p>
+                        </div>
+                        <div>
+                            <h3>Toolset</h3>
+                            <div className={styles.toolList}>
+                                {item.toolset.map((tool) => (
+                                    <div key={tool} className={styles.label}>
+                                        <p>{tool}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </Dialog>
                 </div>
             ))}
         </div>
-    );
-}
-
-function Dialog({ item, isOpen, setIsOpen }) {
-    return (
-        <dialog open={isOpen === item.category}>
-            <header>
-                <h2 className={styles.title}>{item.category}</h2>
-                <button
-                    aria-label={`Close ${item.category} details`}
-                    className="transparent hover-background closeDialogButton"
-                    onClick={() => setIsOpen(false)}
-                >
-                    <XMarkIcon className="icon" />
-                </button>
-            </header>
-            <div className="dialog-section">
-                <p>{item.details}</p>
-            </div>
-            <div className="dialog-section">
-                <h3>Toolset</h3>
-                <div className={styles.toolList}>
-                    {item.toolset.map((tool) => (
-                        <div key={tool} className={styles.label}>
-                            <p>{tool}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </dialog>
     );
 }

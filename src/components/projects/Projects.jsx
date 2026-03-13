@@ -2,7 +2,7 @@ import styles from "./Projects.module.css";
 import { categories, projects } from "../../data/projects";
 import { useState } from "react";
 import Link from "../Link.jsx";
-import XMarkIcon from "../../assets/icons/xmark.svg?react";
+import Dialog from "../dialog/Dialog.jsx";
 
 export default function Projects() {
     const [filter, setFilter] = useState(null);
@@ -48,39 +48,26 @@ export default function Projects() {
                             </button>
                         </div>
                         <Dialog
-                            item={item}
-                            isOpen={isOpen}
-                            setIsOpen={setIsOpen}
-                        />
+                            title={item.title}
+                            isOpen={isOpen === item.url}
+                            onClose={() => setIsOpen(false)}
+                        >
+                            <div>
+                                <p>{item.description}</p>
+                            </div>
+                            <div>
+                                <Link
+                                    href={item.url}
+                                    className="button small hover-opacity"
+                                >
+                                    Visit Project
+                                </Link>
+                            </div>
+                        </Dialog>
                     </li>
                 ))}
             </ul>
         </>
-    );
-}
-
-function Dialog({ item, isOpen, setIsOpen }) {
-    return (
-        <dialog open={isOpen === item.url}>
-            <header>
-                <h2 className={styles.title}>{item.title}</h2>
-                <button
-                    aria-label={`Close ${item.title} details`}
-                    className="transparent hover-background closeDialogButton"
-                    onClick={() => setIsOpen(false)}
-                >
-                    <XMarkIcon className="icon" />
-                </button>
-            </header>
-            <div className="dialog-section">
-                <p>{item.description}</p>
-            </div>
-            <div className="dialog-section">
-                <Link href={item.url} className="button small hover-opacity">
-                    Visit Project
-                </Link>
-            </div>
-        </dialog>
     );
 }
 
