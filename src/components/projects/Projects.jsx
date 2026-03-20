@@ -3,6 +3,7 @@ import { categories, projects } from "../../data/projects";
 import { useState } from "react";
 import Link from "../Link.jsx";
 import Dialog from "../dialog/Dialog.jsx";
+import Card from "../card/Card.jsx";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);
@@ -35,16 +36,12 @@ export default function Projects() {
       <ul className={styles.grid}>
         {visibleProjects.map((item) => (
           <li key={item.url}>
-            <div className={styles.card}>
-              <h3>{item.title}</h3>
-              <p className="body-secondary">{item.preview}</p>
-              <button
-                onClick={() => setIsOpen(item.url)}
-                className={`button small outline hover-accent`}
-              >
-                Read More
-              </button>
-            </div>
+            <Card
+              title={item.title}
+              desc={item.preview}
+              buttonLabel="Read More"
+              onButtonClick={() => setIsOpen(item.url)}
+            />
             <Dialog
               title={item.title}
               isOpen={isOpen === item.url}
