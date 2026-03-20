@@ -32,7 +32,7 @@ export default function Projects() {
           />
         ))}
       </div>
-      <ul className={styles.projectList}>
+      <ul className={styles.grid}>
         {visibleProjects.map((item) => (
           <li key={item.url}>
             <div className={styles.card}>
@@ -50,14 +50,10 @@ export default function Projects() {
               isOpen={isOpen === item.url}
               onClose={() => setIsOpen(false)}
             >
-              <div>
-                <p>{item.description}</p>
-              </div>
-              <div>
-                <Link href={item.url} className="button small hover-opacity">
-                  Visit Project
-                </Link>
-              </div>
+              <p>{item.description}</p>
+              <Link href={item.url} className="button small hover-opacity">
+                Visit Project
+              </Link>
             </Dialog>
           </li>
         ))}
