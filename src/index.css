@@ -86,7 +86,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: var(--spacing-xxl);
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg);
 }
 
 main {
