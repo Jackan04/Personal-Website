@@ -108,6 +108,7 @@ p {
   line-height: var(--lh-relaxed);
   color: var(--color-body);
   white-space: pre-wrap;
+  max-width: 65ch;
 }
 
 .body-secondary {
