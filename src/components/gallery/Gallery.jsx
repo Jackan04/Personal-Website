@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
-import Loading from "../loading/Loading.jsx";
+import Loading from "../status/Loading.jsx";
+import Error from "../status/Error.jsx";
 import CustomLink from "../CustomLink.jsx";
 
 export default function Gallery() {
@@ -42,15 +43,8 @@ export default function Gallery() {
   }
 
   if (loading) return <Loading />;
-
-  if (!loading && images.length < 1) {
-    return (
-      <div className="loading-container">
-        <p>Failed to load the images from Unsplash.</p>
-      </div>
-    );
-  }
-
+  if (!loading && images.length < 1)
+    return <Error message="Failed to load the images from Unsplash." />;
   return (
     <>
       <div className={styles.gallery}>

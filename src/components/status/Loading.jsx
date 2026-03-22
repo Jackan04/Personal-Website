@@ -1,9 +1,9 @@
 import SpinnerIcon from "../../assets/icons/spinner.svg?react";
-import styles from "./Loading.module.css";
+import styles from "./Status.module.css";
 
 export default function Loading() {
   return (
-    <div className={styles.loadingContainer}>
+    <div className={styles.statusContainer}>
       <SpinnerIcon className={styles.spinnerIcon} />
       <p>Loading...</p>
     </div>
