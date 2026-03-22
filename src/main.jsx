@@ -21,7 +21,11 @@ const router = createHashRouter([
       },
       {
         path: "/projects",
-        element: <Projects />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Projects />
+          </Suspense>
+        ),
       },
       {
         path: "/photography",
