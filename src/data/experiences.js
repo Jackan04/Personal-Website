@@ -3,7 +3,7 @@ const experiences = [
     category: "Backend",
     description: "Read about my experience building server-side applications.",
     details:
-      "My backend work centers around Node.js and Express, building RESTful APIs with a focus on clean structure and security. I've implemented authentication flows with Passport.js and JWT, and session-based authentication, managing databases through Prisma ORM and Mongoose, and rendering server-side views with EJS. I've also worked with C# and .NET, giving me exposure beyond the JavaScript ecosystem.",
+      "I build RESTful APIs with Node.js and Express, handling auth via Passport.js and JWT, data modeling through Prisma and Mongoose, and server-side rendering with EJS. I've also built in C# and .NET, so I'm not limited to the JavaScript ecosystem.",
     toolset: [
       "Node.js",
       "Express.js",
@@ -20,29 +20,29 @@ const experiences = [
     category: "Frontend",
     description: "Read about my experience crafting web interfaces.",
     details:
-      "React is the tool I mainly use for frontend work. I build component-driven UIs with a focus on clean structure, intuitive interactions, and responsive design. I mix between writing CSS by hand or relying on lightweight UI libraries such as oat.ink when I want to spin up something a bit faster.",
+      "I build UIs in React with a focus on component structure, responsive layouts, and clean CSS. I switch between writing custom CSS, or reach for lightweight libraries like oat.ink when I need to move faster.",
     toolset: ["React", "JavaScript", "HTML", "CSS"],
   },
   {
     category: "Mobile",
     description: "Read about my experience developing mobile apps.",
     details:
-      "I have experience in mobile on two fronts, native iOS using Swift and SwiftUI, and cross-platform using React Native. On the native side I've worked with platform-specific frameworks like Core ML and SwiftData. React Native lets me carry my JavaScript skills into mobile, making it a natural fit for cross-platform projects.",
+      "I've built native iOS apps with Swift and SwiftUI, using platform frameworks like Core ML and SwiftData. For cross-platform work I have experience with React Native, which lets me share logic across iOS and Android.",
     toolset: ["Swift", "SwiftUI", "React Native"],
   },
   {
     category: "Data",
     description: "Read about my experience working with databases.",
     details:
-      "I've worked with both relational and non-relational databases and try to pick the right tool for the job. I'm comfortable with schema design, querying, and integrating databases into the rest of an application.",
+      "I work with both relational and document databases depending on the project's needs. I'm comfortable with schema design, writing queries, and wiring databases into the application layer.",
     toolset: ["PostgreSQL", "MongoDB", "SQLite", "Firebase Firestore"],
   },
   {
     category: "Testing",
     description: "Read about my experience writing automated tests.",
     details:
-      "I have foundational experience with automated testing across different environments. I've written basic test suites with Jest in JavaScript projects, used SuperTest for testing Express routes and controllers, xUnit in C#, and Swift Testing for iOS.",
-    toolset: ["Jest", "SuperTest", "xUnit", "Swift Testing"],
+      "I have experience writing unit and integration tests across different environments. In JavaScript projects I use Jest for unit tests and SuperTest for testing Express routes.",
+    toolset: ["Jest", "SuperTest"],
   },
   {
     category: "Design",
