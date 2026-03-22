@@ -1,8 +1,8 @@
-import { categories, projects } from "../data/projects";
+import { categories, projects } from "../data/projects.js";
 import { useState } from "react";
-import CustomLink from "./CustomLink.jsx";
-import Dialog from "./dialog/Dialog.jsx";
-import Card from "./card/Card.jsx";
+import CustomLink from "../components/CustomLink.jsx";
+import Dialog from "../components/dialog/Dialog.jsx";
+import Card from "../components/card/Card.jsx";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);

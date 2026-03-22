@@ -1,6 +1,6 @@
-import profileImage from "../../assets/images/profile.webp";
-import ExperienceCards from "../experience-cards/ExperienceCards.jsx";
-import CustomLink from "../CustomLink.jsx";
+import profileImage from "../assets/images/profile.webp";
+import ExperienceCards from "../components/experience-cards/ExperienceCards.jsx";
+import CustomLink from "../components/CustomLink.jsx";
 import { Link } from "react-router-dom";
 
 export default function Home() {

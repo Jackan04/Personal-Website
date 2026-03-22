@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
-import Loading from "../status/Loading.jsx";
-import Error from "../status/Error.jsx";
-import CustomLink from "../CustomLink.jsx";
+import Loading from "../../components/status/Loading.jsx";
+import Error from "../../components/status/Error.jsx";
+import CustomLink from "../../components/CustomLink.jsx";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
