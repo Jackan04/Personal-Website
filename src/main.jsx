@@ -4,7 +4,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./components/home/Home.jsx";
-import Projects from "./components/projects/Projects.jsx";
+import Projects from "./components/Projects.jsx";
 import NotFound from "./components/NotFound.jsx";
 import Loading from "./components/Loading.jsx";
 
