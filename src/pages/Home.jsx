@@ -10,9 +10,9 @@ export default function Home() {
         <img src={profileImage} alt="Jacob Asker" className="profile-image" />
         <h2>Full-Stack Developer</h2>
         <p>
-          Finishing my Bachelor's in Informatics and looking for my first
-          professional role. I enjoy building practical, well-crafted
-          applications. Take a look at my{" "}
+          I'm a web developer finishing my Bachelor's in Informatics, looking
+          for my first professional role. I build applications with attention to
+          both functionality and user experience. Browse my{" "}
           <Link className="inline-link" to="/projects">
             projects
           </Link>
