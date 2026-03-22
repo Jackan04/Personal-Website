@@ -61,26 +61,6 @@ export default function Gallery() {
 
     return (
         <>
-            <Accordion summary="About the photos">
-                <p>
-                    Photography is my creative outlet away from the screen. I
-                    shoot on my iPhone 15 Pro and edit in{" "}
-                    <Link
-                        className="inline-link"
-                        href="https://www.pixelmator.com/photomator/"
-                    >
-                        Photomator
-                    </Link>
-                    . You can find more of my work on{" "}
-                    <Link
-                        className="inline-link"
-                        href="https://unsplash.com/@jacobasker04"
-                    >
-                        my Unsplash profile
-                    </Link>
-                    .
-                </p>
-            </Accordion>
             <div className={styles.gallery}>
                 {images.map((image) => (
                     <div key={image.id} className={styles.imageCard}>
