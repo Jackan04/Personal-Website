@@ -1,4 +1,3 @@
-import styles from "./Projects.module.css";
 import { categories, projects } from "../../data/projects";
 import { useState } from "react";
 import Link from "../Link.jsx";
