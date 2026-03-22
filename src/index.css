@@ -91,7 +91,7 @@ body {
   padding: var(--spacing-lg);
 }
 
-.main {
+main {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
