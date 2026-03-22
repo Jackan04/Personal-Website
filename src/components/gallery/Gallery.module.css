@@ -15,12 +15,6 @@ img {
   transition: transform 0.15s ease-out;
 }
 
-.attribution,
-.attribution a {
-  font-size: var(--font-caption);
-  color: var(--color-caption);
-}
-
 .loadMoreButton {
   align-self: center;
 }
