@@ -1,10 +1,10 @@
 import { lazy, Suspense } from "react";
 import App from "./App.jsx";
-import Home from "./components/home/Home.jsx";
-import Projects from "./components/Projects.jsx";
-import NotFound from "./components/NotFound.jsx";
+import Home from "./pages/Home.jsx";
+import Projects from "./pages/Projects.jsx";
+import NotFound from "./pages/NotFound.jsx";
 import Loading from "./components/status/Loading.jsx";
-const Gallery = lazy(() => import("./components/gallery/Gallery.jsx"));
+const Gallery = lazy(() => import("./pages/gallery/Gallery.jsx"));
 
 const routes = [
   {
@@ -17,11 +17,7 @@ const routes = [
       },
       {
         path: "/projects",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Projects />
-          </Suspense>
-        ),
+        element: <Projects />,
       },
       {
         path: "/photography",
