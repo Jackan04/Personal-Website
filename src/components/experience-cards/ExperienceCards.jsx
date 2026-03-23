@@ -10,7 +10,7 @@ export default function ExperienceCards() {
           <details className={styles.card}>
             <summary className={styles.summary}>
               <b>{item.category}</b>
-              <ChevronDownIcon className={styles.arrow} />
+              <ChevronDownIcon className={`icon-small ${styles.arrow}`} />
             </summary>
             <div className={styles.toolList}>
               {item.toolset.map((tool) => (
