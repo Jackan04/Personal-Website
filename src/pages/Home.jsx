@@ -14,10 +14,8 @@ export default function Home() {
           looking for my first professional role. I build applications with care
           for how they work and how they feel to use.
         </p>
-        <small>
-          Gothenburg, Sweden | Available for work
-        </small>
-        <menu className="buttons">
+        <small>Gothenburg, Sweden | Available for work</small>
+        <div className="buttons">
           <CustomLink
             href="mailto:jacob.asker@icloud.com"
             className="button small hover-opacity"
@@ -27,7 +25,7 @@ export default function Home() {
           <Link to="/projects" className="button small outline hover-accent">
             View Work
           </Link>
-        </menu>
+        </div>
       </section>
 
       <section>
