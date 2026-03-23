@@ -14,19 +14,18 @@ export default function Home() {
           looking for my first professional role. I build applications with care
           for how they work and how they feel to use.
         </p>
-        <div className="vstack">
-          <small>Gothenburg, Sweden | Available for work</small>
-          <div className="btn-group">
-            <CustomLink
-              href="mailto:jacob.asker@icloud.com"
-              className="button small hover-opacity"
-            >
-              Contact me
-            </CustomLink>
-            <Link to="/projects" className="button small outline hover-accent">
-              See my work
-            </Link>
-          </div>
+
+        <small>Gothenburg, Sweden | Available for work</small>
+        <div className="btn-group">
+          <CustomLink
+            href="mailto:jacob.asker@icloud.com"
+            className="button small hover-opacity"
+          >
+            Contact me
+          </CustomLink>
+          <Link to="/projects" className="button small outline hover-accent">
+            See my work
+          </Link>
         </div>
       </section>
 
