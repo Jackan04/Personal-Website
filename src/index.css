@@ -157,6 +157,7 @@ section {
 
 .buttons {
   display: flex;
+  align-items: center;
   gap: var(--spacing-sm);
 }
 
@@ -204,12 +205,6 @@ button.outline,
   border-color: var(--color-accent);
   background-color: var(--color-accent);
   color: white;
-}
-
-.filterButtons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
 }
 
 .icon {
