@@ -226,8 +226,12 @@ button.ghost,
   color: white;
 }
 
-.icon {
+.icon,
+.icon-small {
   fill: var(--color-body);
+}
+
+.icon {
   width: clamp(18px, 2vw, 22px);
   height: clamp(18px, 2vw, 22px);
 }
@@ -265,10 +269,11 @@ button.ghost,
   }
 
   .hover-accent:hover,
-  .hover-background:hover,
+  .hover-ghost:hover,
   .hover-opacity:hover {
     cursor: pointer;
   }
+
   .hover-opacity:hover {
     opacity: 0.8;
   }
@@ -278,7 +283,8 @@ button.ghost,
     border-color: var(--color-accent);
   }
 
-  .ghost:hover {
+  .ghost:hover,
+  .ghost:hover > * {
     color: var(--color-accent);
     fill: var(--color-accent);
   }
