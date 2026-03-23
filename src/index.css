@@ -203,6 +203,13 @@ button.outline,
   border-color: var(--color-caption);
 }
 
+button.ghost,
+.button.ghost {
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-body);
+}
+
 .filterButton {
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
@@ -223,6 +230,11 @@ button.outline,
   fill: var(--color-body);
   width: clamp(18px, 2vw, 22px);
   height: clamp(18px, 2vw, 22px);
+}
+
+.icon-small {
+  width: clamp(14px, 1.5vw, 18px);
+  height: clamp(14px, 1.5vw, 18px);
 }
 
 .profile-image {
@@ -264,6 +276,11 @@ button.outline,
   .hover-accent:hover {
     color: var(--color-accent);
     border-color: var(--color-accent);
+  }
+
+  .ghost:hover {
+    color: var(--color-accent);
+    fill: var(--color-accent);
   }
 
   .icon.hover-accent:hover {
