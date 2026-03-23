@@ -221,8 +221,8 @@ button.outline,
 
 .icon {
   fill: var(--color-body);
-  width: 24px;
-  height: 24px;
+  width: clamp(18px, 2vw, 22px);
+  height: clamp(18px, 2vw, 22px);
 }
 
 .profile-image {
