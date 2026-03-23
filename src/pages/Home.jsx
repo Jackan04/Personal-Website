@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <div className="vstack">
           <small>Gothenburg, Sweden | Available for work</small>
-          <div className="buttons">
+          <div className="btn-group">
             <CustomLink
               href="mailto:jacob.asker@icloud.com"
               className="button small hover-opacity"

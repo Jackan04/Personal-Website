@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="buttons">
+      <div className="btn-group">
         <FilterButton
           label="All"
           value={null}
