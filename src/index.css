@@ -33,9 +33,9 @@
   --color-gray-light: #f4f6f8;
 
   /* Font Sizes */
-  --font-heading: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
-  --font-subheading: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
-  --font-body: clamp(1rem, 0.975rem + 0.13vw, 1.125rem);
+  --font-heading: clamp(1.2rem, 1.1rem + 0.5vw, 1.375rem);
+  --font-subheading: clamp(1.0625rem, 1rem + 0.3vw, 1.175rem);
+  --font-body: 1rem;
   --font-caption: clamp(0.875rem, 0.85rem + 0.13vw, 0.9375rem);
 
   /* Font Weights */
