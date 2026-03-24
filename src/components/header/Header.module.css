@@ -12,6 +12,7 @@ nav ul {
 }
 
 .navLink {
+  font-size: var(--font-body);
   font-weight: var(--weight-semi);
   color: var(--color-caption);
 }
@@ -21,7 +22,7 @@ nav ul {
 }
 
 .logo {
-  font-size: var(--font-heading);
+  font-size: var(--font-subheading);
   font-weight: var(--weight-bold);
   color: var(--color-caption);
 }
