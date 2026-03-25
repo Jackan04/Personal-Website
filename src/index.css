@@ -243,7 +243,7 @@ button.ghost,
 .profile-image {
   width: 108px;
   height: 108px;
-  border-radius: 100%;
+  border-radius: var(--border-radius-full);
 }
 
 @media (max-width: 480px) {
