@@ -16,12 +16,11 @@ export default function Gallery() {
     queryFn: async () => {
       const data = await UnsplashService.getAllImages(page);
       setImages((prev) => (page === 1 ? data : [...prev, ...data]));
-      
+
       if (data.length === 0 || data.length < 12) setHasMore(false);
-      
+
       return data;
     },
-    staleTime: 1000 * 60 * 5, // cache each page for 5 minutes
   });
 
   if (isLoading && page === 1) return <Loading />;
