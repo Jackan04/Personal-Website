@@ -8,7 +8,7 @@ import CustomLink from "../../components/CustomLink.jsx";
 export default function Gallery() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState({ message: "Error message" });
+  const [error, setError] = useState(null);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
 
