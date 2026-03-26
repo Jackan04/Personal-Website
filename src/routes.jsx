@@ -12,15 +12,15 @@ const routes = [
     element: <App />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home />,
       },
       {
-        path: "/projects",
+        path: "projects",
         element: <Projects />,
       },
       {
-        path: "/photography",
+        path: "photography",
         element: (
           <Suspense fallback={<Loading />}>
             <Gallery />
