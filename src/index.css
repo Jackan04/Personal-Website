@@ -157,6 +157,15 @@ section {
   gap: var(--spacing-md);
 }
 
+.hstack {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .btn-group {
   display: flex;
   align-items: center;

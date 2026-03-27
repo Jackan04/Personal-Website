@@ -1,11 +1,10 @@
 import profileImage from "../assets/images/profile.webp";
 import ExperienceCards from "../components/experience-cards/ExperienceCards.jsx";
-import CustomLink from "../components/CustomLink.jsx";
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects.js";
 import { useState } from "react";
+import CustomLink from "../components/CustomLink.jsx";
 import Card from "../components/card/Card.jsx";
-import ChevronRightIcon from "../assets/icons/chevron-right.svg?react";
 
 export default function Home() {
   const [featuredProjects, _] = useState(
@@ -32,7 +31,12 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Featured Projects</h2>
+        <div className="hstack justify-between">
+          <h2>Featured Projects</h2>
+          <Link to="/projects" className="button small ghost hover-bg">
+            See all projects
+          </Link>
+        </div>
         <ul className="grid-container">
           {featuredProjects.map((item) => (
             <li key={item.url}>
@@ -40,10 +44,6 @@ export default function Home() {
             </li>
           ))}
         </ul>
-        <Link to="/projects" className="button small ghost hover-bg">
-          See all projects
-          <ChevronRightIcon className="icon-small" />
-        </Link>
       </section>
 
       <section>
