@@ -183,6 +183,7 @@ button,
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-xs);
   border: 1px solid transparent;
   background-color: var(--color-accent);
   color: #fff;
@@ -282,6 +283,10 @@ button.ghost,
   .hover-accent:hover {
     color: var(--color-accent);
     border-color: var(--color-accent);
+  }
+
+  .hover-accent:hover > * {
+    fill: var(--color-accent);
   }
 
   .hover-bg:hover {
