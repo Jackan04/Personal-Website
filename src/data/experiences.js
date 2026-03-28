@@ -5,15 +5,22 @@ const experiences = [
   },
   {
     category: "Backend",
-    toolset: ["Node.js", "Express.js", "REST APIs", "Authentication"],
+    toolset: [
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "MongoDB",
+      "Passport.js",
+      "JWT",
+    ],
   },
   {
-    category: "Frontend & Mobile",
+    category: "Frontend",
     toolset: ["React", "React Native", "SwiftUI"],
   },
   {
-    category: "Databases",
-    toolset: ["PostgreSQL", "MongoDB"],
+    category: "Tools",
+    toolset: ["Git", "Figma", "Sketch"],
   },
 ];
 
