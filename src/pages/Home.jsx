@@ -44,7 +44,7 @@ export default function Home() {
         <div className="hstack justify-between">
           <h2>Featured Projects</h2>
           <Link to="/projects" className="button small ghost hover-bg">
-            See all projects
+            See all
           </Link>
         </div>
         <ul className="grid-container">
