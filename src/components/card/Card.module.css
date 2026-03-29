@@ -1,9 +1,3 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -12,19 +6,20 @@
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
-  background-color: var(--color-gray-light);
+  transition: background-color 0.18s ease;
 }
 
-.text {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
+.chevron {
+  transition: transform 0.18s ease;
 }
 
 @media (hover: hover) {
   .card:hover {
     cursor: pointer;
     background-color: var(--color-gray-light);
+  }
+
+  .card:hover .chevron {
+    transform: translateX(3px);
   }
 }
