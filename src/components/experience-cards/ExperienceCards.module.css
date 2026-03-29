@@ -41,6 +41,6 @@ details[open] .chevron {
   color: var(--color-body);
   border: 1px solid var(--color-border);
   background-color: var(--color-gray-light);
-  padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius);
 }
