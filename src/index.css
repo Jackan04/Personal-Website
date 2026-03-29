@@ -284,7 +284,8 @@ button.ghost,
   }
 
   .hover-accent:hover,
-  .hover-opacity:hover {
+  .hover-opacity:hover,
+  .hover-bg:hover {
     cursor: pointer;
   }
 
