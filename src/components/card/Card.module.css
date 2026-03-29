@@ -14,11 +14,6 @@
 }
 
 @media (hover: hover) {
-  .card:hover {
-    cursor: pointer;
-    background-color: var(--color-gray-light);
-  }
-
   .card:hover .chevron {
     transform: translateX(3px);
   }
