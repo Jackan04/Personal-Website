@@ -48,10 +48,11 @@
   /* Spacing Scale */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
+  --spacing-ms: 0.75rem;
   --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-xxl: 4rem;
+  --spacing-lg: clamp(1.25rem, 2vw, 1.5rem);
+  --spacing-xl: clamp(1.5rem, 3vw, 2rem);
+  --spacing-xxl: clamp(2.5rem, 6vw, 4rem);
 
   /* Transitions */
   --transition-transform: transform 0.18s ease;
@@ -193,7 +194,6 @@ button,
   border: 1px solid transparent;
   background-color: var(--color-accent);
   color: var(--color-background);
-  padding: 8px 18px;
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
   font-size: var(--font-body);
@@ -263,14 +263,6 @@ button.ghost,
 }
 
 @media (max-width: 480px) {
-  :root {
-    --spacing-sm: 0.5rem;
-    --spacing-md: 0.75rem;
-    --spacing-lg: 1.25rem;
-    --spacing-xl: 1.75rem;
-    --spacing-xxl: 2.5rem;
-  }
-
   .profile-image {
     width: 72px;
     height: 72px;
