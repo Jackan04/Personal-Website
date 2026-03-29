@@ -5,7 +5,8 @@ const projects = [
     category: categories[0],
     url: "https://github.com/Jackan04/chat-app-client",
     title: "Chat App",
-    preview: "Messaging app with a REST API and React client.",
+    preview:
+      "Full-stack messaging app with authentication, user search and conversation management.",
     featured: true,
   },
   {
@@ -13,43 +14,46 @@ const projects = [
     url: "https://github.com/Jackan04/blog-api",
     title: "Blog Platform",
     preview:
-      "Full-stack blogging platform with API, admin, and public clients.",
+      "Three-part blogging platform with a REST API, admin dashboard and public-facing client.",
     featured: false,
   },
-
   {
     category: categories[0],
     url: "https://github.com/Jackan04/file-uploader",
     title: "File Uploader",
-    preview: "Full-stack Node.js app for uploading and managing files.",
+    preview:
+      "File management app with authentication and full CRUD for files and folders.",
     featured: true,
   },
   {
     category: categories[0],
     url: "https://github.com/Jackan04/Ticky",
     title: "Task Manager",
-    preview: "Simple personal task manager for lists and due dates.",
+    preview:
+      "Delightful task manager for organizing tasks into lists, adding notes and tracking due dates.",
     featured: false,
   },
   {
     category: categories[1],
     url: "https://github.com/Jackan04/MediaTracker?tab=readme-ov-file",
     title: "Media Tracker",
-    preview: "Mobile watchlist app for movies and TV shows.",
+    preview:
+      "Track movies and TV shows with search, personal watchlists and recommendations.",
     featured: false,
   },
   {
     category: categories[1],
     url: "https://github.com/Jackan04/ShelfLife",
     title: "Shelf Life",
-    preview: "Mobile app to track groceries and expiration dates.",
+    preview: "Track groceries and expiration dates in a native iOS app.",
     featured: false,
   },
   {
     category: categories[2],
-    url: "https://www.linkedin.com/feed/update/urn:li:activity:7356214960147832832/?originTrackingId=eSg5eAa5mcuCMkl2pRHjqw%3D%3D",
+    url: "https://www.linkedin.com/...",
     title: "Redesign of Self-Checkout",
-    preview: "UX redesign concept to simplify self-checkout flows.",
+    preview:
+      "UI design proposal to improve the self-checkout experience in a retail store.",
     featured: false,
   },
 ];
