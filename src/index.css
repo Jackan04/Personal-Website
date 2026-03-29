@@ -120,7 +120,7 @@ p {
 
 small {
   font-size: var(--font-caption);
-  color: var(--color-caption);
+  color: var(--color-body);
 }
 
 .body-secondary {
