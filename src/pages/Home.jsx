@@ -22,7 +22,9 @@ export default function Home() {
           architecture.
         </p>
 
-        <small>Gothenburg, Sweden | Available for work</small>
+        <small className="body-secondary">
+          Gothenburg, Sweden | Available for work
+        </small>
         <div className="btn-group">
           <CustomLink
             href="mailto:jacob.asker@icloud.com"
