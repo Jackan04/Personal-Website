@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       <div>
-        <p className="body-secondary">Jacob Asker &copy; {year}</p>
+        <p className="text-secondary">Jacob Asker &copy; {year}</p>
       </div>
       <div className="btn-group">
         <CustomLink

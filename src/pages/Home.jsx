@@ -22,7 +22,7 @@ export default function Home() {
           architecture.
         </p>
 
-        <small className="body-secondary">
+        <small className="text-secondary">
           Gothenburg, Sweden | Available for work
         </small>
         <div className="btn-group">
